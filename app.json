@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Corex",
+    "slug": "corex-2-track",
+    "version": "1.0.0",
+    "web": {
+      "favicon": "./assets/corexlogo.png"
+    },
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "plugins": [],
+    "orientation": "portrait",
+    "icon": "./assets/corexlogo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/corexlogo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/corexlogo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.twotrack.corex"
+    }
+  }
+}
