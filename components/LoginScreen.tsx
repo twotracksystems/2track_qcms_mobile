@@ -17,6 +17,8 @@ import { InputPassword } from './FormComponents/InputPassword';
 import Feather from '@expo/vector-icons/Feather';
 import * as FileSystem from 'expo-file-system';
 import { useNavigation } from '@react-navigation/native';
+import {API_URL} from '@env';
+
 
 const corexlogo = require('../assets/img/corexlogo.png');
 
@@ -176,7 +178,7 @@ const authenticate = async (email: string, password: string) => {
       password: password,
     });
 
-    let response = await fetch('https://sledgehammerdevelopmentteam.uk/api/authentication', {
+    let response = await fetch(`${API_URL}/authentication`, {
       method: 'POST',
       body: bodyContent,
       headers: headersList,

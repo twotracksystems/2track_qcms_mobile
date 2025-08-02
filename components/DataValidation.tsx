@@ -3,6 +3,7 @@ import Feather from '@expo/vector-icons/Feather';
 import { useEffect, useState } from 'react';
 import * as FileSystem from 'expo-file-system';
 import { useNavigation } from '@react-navigation/native';
+import { API_URL } from '@env';
 
 export const DataValidation = () => {
   const [message, setMessage] = useState<string>('Data validation in progress...');
@@ -12,8 +13,7 @@ export const DataValidation = () => {
       Accept: '*/*',
       'User-Agent': 'Thunder Client (https://www.thunderclient.com)',
     };
-
-    let response = await fetch('https://www.sledgehammerdevelopmentteam.uk/api/mobile/copy_data', {
+    let response = await fetch(`${API_URL}/mobile/copy_data`, {
       method: 'POST',
       headers: headersList,
     });
